@@ -7013,3 +7013,14 @@ ul li:nth-child(5) {
     margin: -20px 134px -12px;
 }
 
+
+#counter {
+    font-family: 'digital';
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    margin:220px 700px auto;
+    
+}
+
+

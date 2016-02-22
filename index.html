@@ -3,11 +3,12 @@
     <head>
         <title>///TIMER///</title>
         <link href="css/bootstrap.css" rel="stylesheet">
-        
+        <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+        <script src="js/jquery-1.12.0.js"></script>
+        <script src="js/bootstrap.js"></script>
     </head>
     <body style = "background-color: #111111">
-    <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/bootstrap.js"></script>
+    
             <div class = "HexGrid">
             <div class = "timer" id="Timer">
                 
@@ -45,11 +46,23 @@
                     </ul>
                 </div>
             </div>
+            <div id = "vistercount"><p id = "counter"></p></div>
         </div>
     </body>
     <script>
+       
         $(document).ready(function(){
+            var myFirebaseRef = new Firebase("https://ascalontestapp.firebaseio.com/");
             
+            myFirebaseRef.child("visiter_count").once("value", function(snapshot) {
+                var vistercount = snapshot.val();
+                vistercount++;
+                $("#vistercount").find("#counter").text(vistercount);
+                myFirebaseRef.set({visiter_count : vistercount});
+            });
+            
+            
+
             var seconds = 0;
             var min = 0;
             var millisec = 0;
