@@ -67,10 +67,6 @@
                             </tbody>
                         </table>
                     </div>
-                    <input type="text" class="timetable" name="inputtable" id="testtable">
-                    <input type="button" value="Add module" id="btnAdd">  <!--used to add modules-->
-                    <input type="button" value="Begin Upload" id="btnUpload">  <!--final submit of module list-->
-                    <output type="text" class="i" id="index"></output>
                     
                 </div>
 <!----------------------------------------------------Graduation Check Panels------------------------------------>                 
@@ -417,8 +413,13 @@
                         InputModule = x;
                         var results = matchModule(InputModule);
                         if(results.length==0){
-                            var id = document.createTextNode("No Match");
-                            self.appendChild(id);
+                            //var id = document.createTextNode("No Match");
+                            //self.appendChild(id);
+                            $('#results').css("font-size",15+'px');
+                            $('#results').css("padding-top",5+'px');
+                            $('#results').css("padding-bottom",5+'px');
+                            $('#results').css("padding-left",10+'px');
+                            $('#results').append("No Matches Found");
                         }
                         else{
                             for(var i = 0;i<results.length;i++){
@@ -467,7 +468,7 @@
                     else{
                         var code = document.createTextNode(id);
                         var slot = document.createElement('div');
-                        TimeSlot.style.backgroundColor="#09FFFF";
+                        TimeSlot.style.backgroundColor="#CEE3F6";
                         slot.appendChild(code);
                         TimeSlot.appendChild(slot);
                     }
@@ -587,7 +588,7 @@
                             $('#ModuleSlot1').append(Input);
                         }
                     });
-                }
+                }*/
     
                 $(document).click(function(e) {
                     var target = e.target;
@@ -595,7 +596,7 @@
                     if (!$(target).is('#srch-term') && !$(target).parents().is('#srch-term')) {
                         $('#results').hide();
                     }
-                });*/
+                });
              
             </Script>        
         
