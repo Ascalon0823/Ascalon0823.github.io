@@ -68,6 +68,33 @@
                         </table>
                     </div>
                     
+                    <div class = "examinfo">
+                        <table class = "table table-bordered">
+                            <thead>
+                                <tr class="examinfotitle">
+                                    <td class="tabletitle" style="width:150" align="center">Module Number</td><td style="width:480" align="center">Module Name</td><td align="center">Exam Date</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="examinforow">
+                                    <th></th><th></th><th></th>
+                                </tr>
+                                <tr class="examinforow">
+                                    <th></th><th></th><th></th>
+                                </tr>
+                                <tr class="examinforow">
+                                    <th></th><th></th><th></th>
+                                </tr>
+                                <tr class="examinforow">
+                                    <th></th><th></th><th></th>
+                                </tr>
+                                <tr class="examinforow">
+                                    <th></th><th></th><th></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
                 </div>
 <!----------------------------------------------------Graduation Check Panels------------------------------------>                 
 <!----------------------------------------------------Graduation Check Panels------------------------------------>  
@@ -92,10 +119,12 @@
                                 <button class="ULR_eq" id="ULR_eq"><img src="img/excalmatorymark.png" height="15" width="15" align="right" id="ULR_eq"></button>
                             </div>
                             </div>
-                            <progress value="0" max="100" id="progBar_ULR">
-                                <span id="downloadProgress"><!-- Your fallback goes here --></span>
-                            </progress>
-                            <div id="progUpdate_ULR"><!-- Success Message --></div>
+                            <div class="progress" id="progBar_ULR">
+                                <div class="progress-bar progress-bar-success" id="passmoduleULR" role="progressbar"></div>
+                                <div class="progress-bar progress-bar-warning" id="unpassmoduleULR" role="progressbar"></div>
+                            </div>
+                            <div id="progUpdate_ULR"></div>
+                            <div id="progUpdate_ULR_new"></div>
 
                             <!--------------------------------------- PR requirement progress------------------------------------------>
                             <!--------------------------------------- PR requirement progress------------------------------------------>
@@ -112,10 +141,12 @@
                                 <button class="PR_eq" id="PR_eq"><img src="img/excalmatorymark.png" height="15" width="15" align="right" id="PR_eq"></button>
                             </div>
                             </div>
-                            <progress value="0" max="100" id="progBar_PR">
-                                <span id="downloadProgress"><!-- Your fallback goes here --></span>
-                            </progress>
+                            <div class="progress" id="progBar_PR">
+                                <div class="progress-bar progress-bar-success" id="passmodulePR" role="progressbar"></div>
+                                <div class="progress-bar progress-bar-warning" id="unpassmodulePR" role="progressbar"></div>
+                            </div>
                             <div id="progUpdate_PR"><!-- Success Message --></div>
+                            <div id="progUpdate_PR_new"><!-- Success Message --></div>
 
                             <!--------------------------------------- UEM requirement progress------------------------------------------>
                             <!--------------------------------------- UEM requirement progress------------------------------------------>
@@ -132,12 +163,12 @@
                                 <button class="UEM_eq" id="UEM_eq"><img src="img/excalmatorymark.png" height="15" width="15" align="right" id="UEM_eq"></button>
                             </div>
                             </div>
-                            <progress value="0" max="100" id="progBar_UEM">
-                                <div> </div>
-                                <span id="downloadProgress"><!-- Your fallback goes here --></span>
-                            </progress>
+                            <div class="progress" id="progBar_UEM">
+                                <div class="progress-bar progress-bar-success" id="passmoduleUEM" role="progressbar"></div>
+                                <div class="progress-bar progress-bar-warning" id="unpassmoduleUEM" role="progressbar"></div>
+                            </div>
                             <div id="progUpdate_UEM"><!-- Success Message --></div>
-                            
+                            <div id="progUpdate_UEM_new"><!-- Success Message --></div>
                         <!--change progress bar when button is clicked-->
                        
                     </div>
@@ -172,7 +203,7 @@
                        {"id":"LAJ1201","type":"U","passed":true},
                        {"id":"CS2103T","type":"P","passed":false},
                        {"id":"MA1101R","type":"P","passed":true},
-                       {"id":"GEK1505","type":"L","passed":true},
+                       {"id":"GEK1505","type":"L","passed":false},
                        {"id":"SSA2205","type":"L","passed":true},
                        {"id":"CS3242","type":"P","passed":false}
                  ]; 
@@ -217,72 +248,75 @@
                         if(userModules[i].passed){
                             No_PR++;
                         }
+                        else{
+                            future_PR++;
+                        }
                     }
                     else if(userModules[i].type == "L"){
                         if(userModules[i].passed){
                             No_ULR++;
+                        }
+                        else{
+                            future_ULR++;
                         }
                     }
                     else if(userModules[i].type == "U"){
                         if(userModules[i].passed){
                             No_UEM++;
                         }
+                        else{
+                            future_UEM++;
+                        }
                     }
                     else{
                         return false;
                     }
                 };    
-                    progBarLoad('progBar_ULR',20*No_ULR,'progUpdate_ULR'); 
-                    progBarLoad('progBar_PR',(3/10)*No_PR,'progUpdate_PR'); 
-                    progBarLoad('progBar_UEM',20*No_UEM,'progUpdate_UEM'); 
+                    progBarLoad('progBar_ULR',20*No_ULR,20*future_ULR,'progUpdate_ULR'); 
+                    progBarLoad('progBar_PR',(3/10)*No_PR,(3/10)*future_PR,'progUpdate_PR'); 
+                    progBarLoad('progBar_UEM',20*No_UEM,20*future_UEM,'progUpdate_UEM'); 
                 }
              
                 /*******************************************used to update the progress bar********************************************/           /*******************************************used to update the progress bar********************************************/           
-                function progBarLoad(progBar_Name,progBar_update,progUpdate_Name){
+                function progBarLoad(progBar_Name,progBar_update,progBar_unpass,progUpdate_Name){
 
-                    var bar = document.getElementById(progBar_Name),
-                        fallback = document.getElementById('downloadProgress'),
-                        loaded = 0;
-
-                    var Endloaded = loaded + progBar_update; //show how many modules have been read in pass state
+                    var futureCompelte = progBar_update + progBar_unpass;
+                    futureCompelte = Number((futureCompelte).toFixed(1));
                     
-                    var load = function() {
-                        loaded += progBar_update;
-                        bar.value = loaded;
-                        
-                        if(progUpdate_Name == 'progUpdate_UEM'){
-                            if(loaded == Endloaded){    
-                                if(loaded != 100){
-                                    $('#progUpdate_UEM').empty().append(loaded + "% Completion" + "\n" + progBar_update/20*4 + "/20 MC");
-                                }
-                                else{
-                                    $('#progUpdate_UEM').empty().append("Requirements Completed");
-                                }
-                            }
+                    if(progBar_Name == "progBar_ULR"){
+                        $('#passmoduleULR').css("width",progBar_update+'%');
+                        $('#unpassmoduleULR').css("width",progBar_unpass+'%');
+                        if(progBar_update < 100){
+                            $('#progUpdate_ULR').empty().append(progBar_update + "->" + futureCompelte + "% Completion");
+                            $('#progUpdate_ULR_new').empty().append(progBar_update/20*4 + "/20 MC");
                         }
-                        else if(progUpdate_Name == 'progUpdate_ULR'){
-                            if (loaded == Endloaded) {
-                                if(loaded != 100){
-                                    $('#progUpdate_ULR').empty().append(loaded + "% Completion" + "\n" + progBar_update/20*4 + "/20 MC");
-                                }
-                                else{
-                                    $('#progUpdate_ULR').empty().append("Requirements Completed");
-                                }
-                            }
+                        else{
+                            $('#progUpdate_ULR').empty().append("Requirements Completed");
                         }
-                        else if(progUpdate_Name == 'progUpdate_PR'){
+                    }
+                    else if(progBar_Name == "progBar_PR"){
+                        $('#passmodulePR').css("width",progBar_update+'%');
+                        $('#unpassmodulePR').css("width",progBar_unpass+'%');
+                        if(progBar_update < 100){
+                            $('#progUpdate_PR').empty().append(progBar_update + "->" + futureCompelte + "% Completion");
+                            $('#progUpdate_PR_new').empty().append( progBar_update/(3/10)*4 + "/20 MC");
+                        }
+                        else{
+                            $('#progUpdate_PR').empty().append("Requirements Completed");
+                        }
+                    }
+                    else if(progBar_Name == "progBar_UEM"){
+                        $('#passmoduleUEM').css("width",progBar_update+'%');
+                        $('#unpassmoduleUEM').css("width",progBar_unpass+'%');
+                        if(progBar_update < 100){
+                            $('#progUpdate_UEM').empty().append(progBar_update + "->" + futureCompelte + "% Completion");
+                            $('#progUpdate_UEM_new').empty().append(progBar_update/20*4 + "/20 MC");
+                        }
+                        else{
+                            $('#progUpdate_UEM').empty().append("Requirements Completed");
+                        }
+                    }
 
-                            if (loaded == Endloaded) {
-                                if(loaded != 100){
-                                    $('#progUpdate_PR').empty().append(loaded + "% Completion" + "\n" + progBar_update/(3/10)*4 + "/120 MC");
-                                }
-                                else{
-                                    $('#progUpdate_PR').empty().append("Requirements Completed");
-                                }
-                            }
-                        }
-                    };
-                    load();
                 }
              
                 /*******************************************Sort module and add to list********************************************/           /*******************************************Sort module and add to list********************************************/
@@ -293,6 +327,11 @@
                     var ModuleListU = document.getElementById('ModuleListU');
                     var ModuleListL = document.getElementById('ModuleListL');
                     var i,NoPass = 0;
+                    
+                    ModuleListAll.innerHTML = "";
+                    ModuleListP.innerHTML = "";
+                    ModuleListU.innerHTML = "";
+                    ModuleListL.innerHTML = "";
                     
                     //sort the userModules at beginning
                     for(i = 0; i < userModules.length; i++){
@@ -338,7 +377,6 @@
                     }
                     $('.infowindow').on('mouseenter','button',function(e){
                         var id = $(this).first().children().first().text();
-                        console.log(id);
                         var mod = findModule(id);
 
                         var missing = findMissingModule(mod);
@@ -361,6 +399,7 @@
                         var e = document.getElementById('missingModWindow');
                             e.style.display="none";
                     });
+                    return false;
                     
                 }
              
@@ -457,7 +496,6 @@
                 });
                  $('.results').on('click','button',function(e){
                     var id = $(this).first().children().first().text();
-                    console.log(id);
                     var mod = findModule(id);
                     var time = mod.time;
                     var TimeSlot = document.getElementById(time);
@@ -471,6 +509,12 @@
                         TimeSlot.style.backgroundColor="#CEE3F6";
                         slot.appendChild(code);
                         TimeSlot.appendChild(slot);
+                        // {"id":"CS3242","type":"P","passed":false}
+                        
+                        var newMod = {"id":id,"type":mod.type,"passed":false};
+                        userModules.push(newMod);
+                        seeModuleList(userModules);
+                        findMType(userModules);
                     }
                     
                     return false;

@@ -109,8 +109,8 @@ progress {
     position:absolute;
    /* border:1px solid #000;*/
     height:20px; 
-    width:105px;
-    left: 275px;
+    width:160px;
+    left: 245px;
     top: 72px;
     bottom: 0px;
     font-size: 10px;
@@ -120,9 +120,9 @@ progress {
     position:absolute;
    /* border:1px solid #000;*/
     height:20px; 
-    width:105px;
-    left: 275px;
-    top: 116.5px;
+    width:160px;
+    left: 245px;
+    top: 136.5px;
     bottom: 0px;
     font-size: 10px;
 }
@@ -131,9 +131,9 @@ progress {
     position:absolute;
     /*border:1px solid #000;*/
     height:20px; 
-    width:105px;
-    left: 275px;
-    top: 160.5px;
+    width:125px;
+    left: 245px;
+    top: 190.5px;
     bottom: 0px;
     font-size: 10px;
 }
@@ -232,7 +232,7 @@ progress {
 }
 #PRbar {
     margin-top: 10px;
-    width: 250px;
+    width: 220px;
 }
 
 /* UEM Progress bar hovering*/
@@ -262,7 +262,7 @@ progress {
 }
 #UEMbar {
     margin-top: 10px;
-    width: 250px;
+    width: 220px;
 }
 
 .progtips_hl {
@@ -277,7 +277,7 @@ progress {
 }
 
 #ULRbar {
-    width: 250px;
+    width: 220px;
 }
 
 #MLUpload {
@@ -407,21 +407,9 @@ div.results::-webkit-scrollbar{
 }
 /* end of search bar*/
 
-
-
-
-
-
-
-
 .content {
     font-size: 10px;
 }
-
-
-
-
-
 
 #missingModWindow {
     position: absolute;
@@ -438,4 +426,73 @@ div.results::-webkit-scrollbar{
 
 .table-bordered {
     table-layout: fixed;
+}
+
+.examinfo {
+    background-color: white;
+}
+
+.examinforow {
+    height: 25px;
+}
+
+.examinfotitle {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#progBar_ULR {
+    margin-top: 10px;
+    width: 220px;
+    background-color: white;
+    height: 10px;
+}
+
+#progBar_PR {
+    margin-top: 10px;
+    width: 220px;
+    background-color: white;
+    height: 10px;
+}
+#progBar_UEM {
+    margin-top: 10px;
+    width: 220px;
+    background-color: white;
+    height: 10px;
+}
+.progress {
+      border-radius: 0px;
+}
+
+#progUpdate_PR_new {
+        position:absolute;
+   /* border:1px solid #000;*/
+    height:20px; 
+    width:160px;
+    left: 245px;
+    top: 156.5px;
+    bottom: 0px;
+    font-size: 10px;
+}
+
+#progUpdate_ULR_new {
+        position:absolute;
+   /* border:1px solid #000;*/
+    height:20px; 
+    width:160px;
+    left: 245px;
+    top: 92px;
+    bottom: 0px;
+    font-size: 10px;
+}
+
+#progUpdate_UEM_new {
+        position:absolute;
+    /*border:1px solid #000;*/
+    height:20px; 
+    width:125px;
+    left: 245px;
+    top: 210.5px;
+    bottom: 0px;
+    font-size: 10px;
 }
