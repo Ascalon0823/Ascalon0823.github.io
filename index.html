@@ -66,30 +66,36 @@
                                 </tr>
                             </tbody>
                         </table>
+
                     </div>
                     
+                    <div class="buttonoftable">
+                        <input type="button" value="Upload Schedule" id="ScheduleUpload">
+                        <input type="button" value="See Recommendation" id="RecommendationUpload">
+                    </div>
+                                            
                     <div class = "examinfo">
                         <table class = "table table-bordered">
                             <thead>
                                 <tr class="examinfotitle">
-                                    <td class="tabletitle" style="width:150" align="center">Module Number</td><td style="width:480" align="center">Module Name</td><td align="center">Exam Date</td>
+                                    <td class="tabletitle" style="width:150" align="center">Module Number</td><td style="width:400" align="center">Module Name</td><td align="center">Exam Date</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="examinforow">
-                                    <th></th><th></th><th></th>
+                                    <td id="ModuleNumber1"></td><td id="ModuleName1"></td><td id="ExamDate1"></td>
                                 </tr>
                                 <tr class="examinforow">
-                                    <th></th><th></th><th></th>
+                                    <td id="ModuleNumber2"></td><td id="ModuleName2"></td><td id="ExamDate2"></td>
                                 </tr>
                                 <tr class="examinforow">
-                                    <th></th><th></th><th></th>
+                                    <td id="ModuleNumber3"></td><td id="ModuleName3"></td><td id="ExamDate3"></td>
                                 </tr>
                                 <tr class="examinforow">
-                                    <th></th><th></th><th></th>
+                                    <td id="ModuleNumber4"></td><td id="ModuleName4"></td><td id="ExamDate4"></td>
                                 </tr>
                                 <tr class="examinforow">
-                                    <th></th><th></th><th></th>
+                                    <td id="ModuleNumber5"></td><td id="ModuleName5"></td><td id="ExamDate5"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -188,7 +194,23 @@
             </div>
 <!----------------------------------------------------Graduation Check Panels Ends------------------------------------>                 
         <div id = "missingModWindow"></div>
+                
         </div>
+                
+        <div class="footer">
+            <div>
+                <div class="col-sm-4">
+                    <p class="footerfont">Follow</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="footerfont">Contact Us</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="footerfont">Status</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><p class="footerfontC">Copyright © 2016 NUS Acadamic Plan. All rights reserved.</p></div>
         
 <!----------------------------------------------------Scripts------------------------------------>                 
 <!----------------------------------------------------Scripts------------------------------------>  
@@ -201,35 +223,38 @@
                        {"id":"CS1020","type":"P","passed":true},
                        {"id":"CS1231","type":"P","passed":true},
                        {"id":"LAJ1201","type":"U","passed":true},
-                       {"id":"CS2103T","type":"P","passed":false},
+                       {"id":"CS2103T","type":"P","passed":true},
                        {"id":"MA1101R","type":"P","passed":true},
-                       {"id":"GEK1505","type":"L","passed":false},
+                       {"id":"GEK1505","type":"L","passed":true},
                        {"id":"SSA2205","type":"L","passed":true},
-                       {"id":"CS3242","type":"P","passed":false}
+                       {"id":"CS3242","type":"P","passed":true}
                  ]; 
              var requireModules =[
-                       {"id":"CS1010","type":"P","name":"Programming Methodology","pre":[],"time":"1-8"},
-                       {"id":"CS1020","type":"P","name":"Data Structures and Algorithms I","pre":["CS1010"],"time":"1-10"},
-                       {"id":"CS1231","type":"P","name":"Discrete Structures","pre":["CS1010"],"time":"2-10"},
-                       {"id":"CS2010","type":"P","name":"Data Structures andAlgorithms II","pre":["CS1020"],"time":"3-10"},
-                       {"id":"CS2100","type":"P","name":"Computer Organisation","pre":["CS1010"],"time":"1-16"},
-                       {"id":"CS2101","type":"P","name":"Effective Communication for Computing Professionals","pre":[],"time":"3-12"},
-                       {"id":"CS2102","type":"P","name":"Database system","pre":["CS1231","CS1020"],"time":"4-10"},
-                       {"id":"CS2103T","type":"P","name":"Software Engineering","pre":["CS1020"],"time":"5-10"},
-                       {"id":"CS2105","type":"P","name":"Introduction to computer networks","pre":["CS1020"],"time":"3-18"},
-                       {"id":"CS3240","type":"P","name":"Interaction Design","pre":["CS1020"],"time":"3-12"},
-                       {"id":"CS3241","type":"P","name":"Computer Graphics","pre":["CS1020","PC1221"],"time":"4-8"},
-                       {"id":"IS1103","type":"P","name":"Computing and society","pre":[],"time":"2-12"},
-                       {"id":"MA1101R","type":"P","name":"Linear Algebra I","pre":[],"time":"5-8"},
-                       {"id":"CS3242","type":"P","name":"3D Modeling and Animation","pre":["CS3241","PC1221","MA1521","MA1101R"],"time":"4-10"},
-                       {"id":"MA1521","type":"P","name":"Calculus for Computing","pre":[],"time":"4-8"},
-                       {"id":"MA1301","type":"P","name":"Introductory Mathematics","pre":[],"time":"4-12"},
-                       {"id":"SS","type":"L","name":"Social Study","pre":[],"time":"5-16"},
-                       {"id":"ST2334","type":"P","name":"Probability and Statics","pre":["MA1521"],"time":"3-16"},
-                       {"id":"PC1221","type":"P","name":"Fundamental Physics I","pre":[],"time":"1-16"},
-                       {"id":"LAJ1201","type":"U","name":"Japanese I","pre":[],"time":"2-18"},
-                       {"id":"GEK1505","type":"L","name":"Living with Mathematics","pre":[],"time":"4-12"},
-                       {"id":"SSA2205","type":"L","name":"Singapore and Japan","pre":[],"time":"5-12"}
+                       {"id":"CS1010","type":"P","name":"Programming Methodology","pre":[],"time":"1-8","exam":"2016-Apr-25th"},
+                       {"id":"CS1020","type":"P","name":"Data Structures and Algorithms I","pre":["CS1010"],"time":"1-10","exam":"2016-Apr-25th"},
+                       {"id":"CS1231","type":"P","name":"Discrete Structures","pre":["CS1010"],"time":"2-10","exam":"2016-Apr-25th"},
+                       {"id":"CS2010","type":"P","name":"Data Structures andAlgorithms II","pre":["CS1020"],"time":"3-10","exam":"2016-Apr-25th"},
+                       {"id":"CS2100","type":"P","name":"Computer Organisation","pre":["CS1010"],"time":"1-16","exam":"2016-Apr-25th"},
+                       {"id":"CS2101","type":"P","name":"Effective Communication for Computing Professionals","pre":[],"time":"3-12","exam":"2016-Apr-25th"},
+                       {"id":"CS2102","type":"P","name":"Database system","pre":["CS1231","CS1020"],"time":"4-10","exam":"2016-Apr-25th"},
+                       {"id":"CS2103T","type":"P","name":"Software Engineering","pre":["CS1020"],"time":"5-10","exam":"2016-Apr-25th"},
+                       {"id":"CS2105","type":"P","name":"Introduction to computer networks","pre":["CS1020"],"time":"3-18","exam":"2016-Apr-25th"},
+                       {"id":"CS3240","type":"P","name":"Interaction Design","pre":["CS1020"],"time":"3-12","exam":"2016-Apr-25th"},
+                       {"id":"CS3241","type":"P","name":"Computer Graphics","pre":["CS1020","PC1221"],"time":"4-8","exam":"2016-Apr-25th"},
+                       {"id":"IS1103","type":"P","name":"Computing and society","pre":[],"time":"2-12","exam":"2016-Apr-25th"},
+                       {"id":"MA1101R","type":"P","name":"Linear Algebra I","pre":[],"time":"5-8","exam":"2016-Apr-25th"},
+                       {"id":"CS3242","type":"P","name":"3D Modeling and Animation","pre":["CS3241","PC1221","MA1521","MA1101R"],"time":"4-10","exam":"2016-Apr-25th"},
+                       {"id":"MA1521","type":"P","name":"Calculus for Computing","pre":[],"time":"4-8","exam":"2016-Apr-25th"},
+                       {"id":"MA1301","type":"P","name":"Introductory Mathematics","pre":[],"time":"4-12","exam":"2016-Apr-25th"},
+                       {"id":"SS","type":"L","name":"Social Study","pre":[],"time":"5-16","exam":"2016-Apr-25th"},
+                       {"id":"ST2334","type":"P","name":"Probability and Statics","pre":["MA1521"],"time":"3-16","exam":"2016-Apr-25th"},
+                       {"id":"PC1221","type":"P","name":"Fundamental Physics I","pre":[],"time":"1-16","exam":"2016-Apr-25th"},
+                       {"id":"LAJ1201","type":"U","name":"Japanese I","pre":[],"time":"2-18","exam":"2016-Apr-25th"},
+                       {"id":"GEK1505","type":"L","name":"Living with Mathematics","pre":[],"time":"4-12","exam":"2016-Apr-25th"},
+                       {"id":"SSA2205","type":"L","name":"Singapore and Japan","pre":[],"time":"5-12","exam":"2016-Apr-25th"},
+                       {"id":"GEM2900","type":"L","name":"UNDERSTAND'G UNCERTAINTY & STATS THINK'G","pre":[],"time":"4-10","exam":"2016-Apr-25th"},
+                       {"id":"LAJ2202","type":"U","name":"Japanese 3","pre":["LAJ2201"],"time":"4-8","exam":"2016-Apr-25th"},
+                       {"id":"LAJ2201","type":"U","name":"Japanese 2","pre":["LAJ1201"],"time":"4-8","exam":"2016-Apr-25th"}
                  ];  
              var tableModules =[
                  ]; 
@@ -282,12 +307,18 @@
 
                     var futureCompelte = progBar_update + progBar_unpass;
                     futureCompelte = Number((futureCompelte).toFixed(1));
+                    progBar_update = Number((progBar_update).toFixed(1));
                     
                     if(progBar_Name == "progBar_ULR"){
                         $('#passmoduleULR').css("width",progBar_update+'%');
                         $('#unpassmoduleULR').css("width",progBar_unpass+'%');
                         if(progBar_update < 100){
-                            $('#progUpdate_ULR').empty().append(progBar_update + "->" + futureCompelte + "% Completion");
+                            if(progBar_update == futureCompelte){
+                                $('#progUpdate_ULR').empty().append(futureCompelte + "% Completion");
+                            }
+                            else{
+                            $('#progUpdate_ULR').empty().append(progBar_update + "to" + futureCompelte + "% Completion");
+                            }
                             $('#progUpdate_ULR_new').empty().append(progBar_update/20*4 + "/20 MC");
                         }
                         else{
@@ -298,8 +329,13 @@
                         $('#passmodulePR').css("width",progBar_update+'%');
                         $('#unpassmodulePR').css("width",progBar_unpass+'%');
                         if(progBar_update < 100){
-                            $('#progUpdate_PR').empty().append(progBar_update + "->" + futureCompelte + "% Completion");
-                            $('#progUpdate_PR_new').empty().append( progBar_update/(3/10)*4 + "/20 MC");
+                            if(progBar_update == futureCompelte){
+                                $('#progUpdate_PR').empty().append(futureCompelte + "% Completion");
+                            }
+                            else{
+                                $('#progUpdate_PR').empty().append(progBar_update + "to" + futureCompelte + "% Completion");
+                            }
+                            $('#progUpdate_PR_new').empty().append( progBar_update/(3/10)*4 + "/120 MC");
                         }
                         else{
                             $('#progUpdate_PR').empty().append("Requirements Completed");
@@ -309,7 +345,12 @@
                         $('#passmoduleUEM').css("width",progBar_update+'%');
                         $('#unpassmoduleUEM').css("width",progBar_unpass+'%');
                         if(progBar_update < 100){
-                            $('#progUpdate_UEM').empty().append(progBar_update + "->" + futureCompelte + "% Completion");
+                            if(progBar_update == futureCompelte){
+                                $('#progUpdate_UEM').empty().append(futureCompelte + "% Completion");
+                            }
+                            else{
+                                $('#progUpdate_UEM').empty().append(progBar_update +" to " + futureCompelte + "% Completion");
+                            }
                             $('#progUpdate_UEM_new').empty().append(progBar_update/20*4 + "/20 MC");
                         }
                         else{
@@ -457,7 +498,6 @@
                             $('#results').css("font-size",15+'px');
                             $('#results').css("padding-top",5+'px');
                             $('#results').css("padding-bottom",5+'px');
-                            $('#results').css("padding-left",10+'px');
                             $('#results').append("No Matches Found");
                         }
                         else{
@@ -494,30 +534,48 @@
                         }
                     }
                 });
+             
                  $('.results').on('click','button',function(e){
                     var id = $(this).first().children().first().text();
                     var mod = findModule(id);
-                    var time = mod.time;
-                    var TimeSlot = document.getElementById(time);
-                    var FindClash = TimeSlot.childNodes.length;
-                    if(FindClash >= 1){
-                        alert("clash!");
+                    
+                    var checkpassed = checkPass(id,userModules);
+                    var missing = findMissingModule(mod);
+                    if(missing.length>0){
+                        alert("Pre-requist is not fulfilled");
+                        return false;
+                    }
+                    else if(checkpassed){
+                        alert("You have passed this module");
+                        return false;
                     }
                     else{
-                        var code = document.createTextNode(id);
-                        var slot = document.createElement('div');
-                        TimeSlot.style.backgroundColor="#CEE3F6";
-                        slot.appendChild(code);
-                        TimeSlot.appendChild(slot);
-                        // {"id":"CS3242","type":"P","passed":false}
-                        
-                        var newMod = {"id":id,"type":mod.type,"passed":false};
-                        userModules.push(newMod);
-                        seeModuleList(userModules);
-                        findMType(userModules);
+                        var time = mod.time;
+                        var TimeSlot = document.getElementById(time);
+                        var FindClash = TimeSlot.childNodes.length;
+                        if(FindClash >= 1){
+                            alert("clash!");
+                        }
+                        else{                            
+                            var code = document.createTextNode(id);
+                            var slot = document.createElement('div');
+                            TimeSlot.style.backgroundColor="#CEE3F6";
+                            slot.appendChild(code);
+                            TimeSlot.appendChild(slot);
+                            var newMod = {"id":id,"type":mod.type,"passed":false};
+                            userModules.push(newMod);
+                            seeModuleList(userModules);
+                            findMType(userModules);
+                            
+                            var ModuleName = document.createElement("p");
+                            ModuleName = id;
+                            $('#ModuleNumber1').empty().append(ModuleName);
+                            alert("");
+                            
+                            return false;
+                        }
                     }
-                    
-                    return false;
+
                 });
             
                 function createModButtone(mod){
@@ -615,6 +673,19 @@
                     return missing;
                 }
              
+                function checkPass(mod,userModules){
+                    var i;
+                    for(i = 0;i <userModules.length;i++){
+                        if(mod == userModules[i].id){
+                            if(userModules[i].passed){
+                                return true;
+                            }
+                            else{
+                                return false;
+                            }
+                        }
+                    }
+                }
                 /*function fillinTable(InputModule){
                     var Input = InputModule;
                     $('#module_select').click(function(){

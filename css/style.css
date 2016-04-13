@@ -33,10 +33,11 @@
     /*border:1px solid #000;*/ 
     /*width:950px;*/
     width:100%;
-    height:500px;
+    height:520px;
     margin:5px 0 5px 0;
     background-color: #F5F5F5;
 }
+/*
 
 ::-webkit-scrollbar{
     width:12px;
@@ -51,6 +52,7 @@
     background: #FF7F50;
 }
 
+*/
 
 body {
     margin: 0;
@@ -428,9 +430,7 @@ div.results::-webkit-scrollbar{
     table-layout: fixed;
 }
 
-.examinfo {
-    background-color: white;
-}
+
 
 .examinforow {
     height: 25px;
@@ -495,4 +495,70 @@ div.results::-webkit-scrollbar{
     top: 210.5px;
     bottom: 0px;
     font-size: 10px;
+}
+
+#RecommendationUpload {
+    float: right;
+    margin-top: 0;
+    background-color: #FF7F50;
+    color:white;
+    font-size: 10px;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+.table {
+    background-color: white;
+}
+
+#ScheduleUpload {
+    float: inherit;
+    margin-top: 0;
+    background-color: #FF7F50;
+    color:white;
+    font-size: 10px;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+.buttonoftable {
+    display: inline;
+    float: right;
+}
+
+.footer {
+    background-color: #585858;
+    height: auto;
+}
+
+.footerfont {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footerfontC {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.SeperateLine {
+    background-color: white;
+    height: 2px;
+}
+
+.footerC {
+        background-color: #585858;
+    height: auto;
+}
+
+#ModuleNumber1 {
+    font-size: 8px;
+    height: 10px;
 }
