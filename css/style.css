@@ -1,0 +1,441 @@
+
+.container {
+    position:relative; 
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 100%;
+    /*padding:10 0 0 60px;*/
+}
+
+/*
+.gradpanel {
+    position:absolute;
+    border:1px solid #000;
+    height:500px; 
+    width:190px;
+    left: 970px;
+    top: 115px;
+    bottom: 50px;
+}
+*/
+
+.header {
+    background: #FF7F50;
+    height:50px;
+    margin: 0;
+    font-size: 35px;
+    text-align: left;
+    display: block;
+}
+
+.content {
+    /*border:1px solid #000;*/ 
+    /*width:950px;*/
+    width:100%;
+    height:500px;
+    margin:5px 0 5px 0;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar{
+    width:12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: #EAEAEA;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FF7F50;
+}
+
+
+body {
+    margin: 0;
+    float:left;
+    padding:15px 0;
+    width:100%;
+}
+
+p1 {
+    color: white;
+    padding-left: 20px;
+    font-style: 'Poiret+One', sans-serif;
+}
+
+.NUSACP-brand {
+    color: white;
+}
+
+.input-group {
+    margin-top: 8px;
+    width: 400px;
+}
+
+.infowindow {
+    background-color: white;
+    border: 2px solid #FF7F50;
+    height: 220px;
+    width: 350px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.col-sm-4 {
+    table-layout: auto;
+}
+
+progress {
+    width: 250px;
+}
+
+.progUpdates {
+    position:absolute;
+    border:1px solid #000;
+    height:20px; 
+    width:135px;
+    left: 250px;
+    top: 85px;
+    bottom: 0px;
+}
+
+.progBars {
+    width: 210px;
+}
+
+#progUpdate_ULR {
+    position:absolute;
+   /* border:1px solid #000;*/
+    height:20px; 
+    width:105px;
+    left: 275px;
+    top: 72px;
+    bottom: 0px;
+    font-size: 10px;
+}
+
+#progUpdate_PR {
+    position:absolute;
+   /* border:1px solid #000;*/
+    height:20px; 
+    width:105px;
+    left: 275px;
+    top: 116.5px;
+    bottom: 0px;
+    font-size: 10px;
+}
+
+#progUpdate_UEM {
+    position:absolute;
+    /*border:1px solid #000;*/
+    height:20px; 
+    width:105px;
+    left: 275px;
+    top: 160.5px;
+    bottom: 0px;
+    font-size: 10px;
+}
+
+
+#ULR_q #popupULR {
+    display: none;
+}
+
+#ULR_q:hover #popupULR{
+    display: block;
+}
+
+#ULR_q span{
+    display: none;
+}
+
+#ULR_q:hover span{
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+    border:1px solid #FF7F50;
+}
+
+#ULR_q {
+    float: right;
+}
+
+.progtips {
+    font-size: 10px;
+    margin: 3px;
+}
+
+.timetable {
+    background-color: white;
+}
+
+
+.profile {
+    float:right;
+    height:inherit;
+}
+
+.user {
+    margin: 5px;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color:white;
+    font-size: 20px;
+    border-style: solid;
+    border-color: white;
+    
+}
+
+
+.infowindow button{
+    height:32px;
+    width: 336px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+    text-align: left;
+    color: black;
+    display: block;
+    border: none;
+    
+}
+
+/* PR Progress bar hovering*/
+#PR_q #popupPR {
+    display: none;
+}
+
+#PR_q:hover #popupPR{
+    display: block;
+}
+
+#PR_q span{
+    display: none;
+}
+
+#PR_q:hover span{
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+    border:1px solid #FF7F50;
+}
+
+#PR_q {
+    float: right;
+}
+#PRbar {
+    margin-top: 10px;
+    width: 250px;
+}
+
+/* UEM Progress bar hovering*/
+#UEM_q #popupUEM {
+    display: none;
+}
+
+#UEM_q:hover #popupUEM{
+    display: block;
+}
+
+#UEM_q span{
+    display: none;
+}
+
+#UEM_q:hover span{
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+    border:1px solid #FF7F50;
+}
+
+#UEM_q {
+    float: right;
+}
+#UEMbar {
+    margin-top: 10px;
+    width: 250px;
+}
+
+.progtips_hl {
+    font-size: 10px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.imgs {
+    float: right;
+    display: inline-block;
+}
+
+#ULRbar {
+    width: 250px;
+}
+
+#MLUpload {
+    float: right;
+    margin-top: 8px;
+    vertical-align: middle;
+    background-color: #FF7F50;
+    color:white;
+    font-size: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+.PR_eq {
+    display: block;
+    float: inherit;
+    margin-right: 2px;
+    margin-top: -1px;
+    background-color: transparent;
+    border-style: none;
+    width: 15px;
+    height: 15px;
+}
+
+.ULR_eq {
+    display: block;
+    float: inherit;
+    margin-right: 2px;
+    margin-top: -1px;
+    background-color: transparent;
+    border-style: none;
+    width: 15px;
+    height: 15px;
+}
+
+.UEM_eq {
+    display: block;
+    margin-right: 2px;
+    margin-top: -1px;
+    float: inherit;
+    background-color: transparent;
+    border-style: none;
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.ModuleListAll {
+    display: block;
+}
+
+.ModuleListP {
+    display: none;
+}
+
+.ModuleListU {
+    display: none;
+}
+
+.ModuleListL {
+    display: none;
+}
+
+/* showing the drop down*/
+
+.navbar-form .results {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    z-index: 10;
+    padding: 0;
+    margin-top: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cbcfe2 #c8cee7 #c4c7d7;
+    border-radius: 3px;
+    background-color: #fdfdfd;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+div.results::-webkit-scrollbar{
+    width: 0px;
+}
+
+.results button{
+    height:32px;
+    width: 480px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    text-align: left;
+    color: black;
+    display: block;
+    border: none;
+    font-size: 14px;
+    
+}
+
+#missingModWindow button{
+    
+    height:32px;
+    width: 336px;
+    margin-top:2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    text-align: left;
+    color: black;
+    display: block;
+    border: none;
+    font-size: 12px;
+}
+
+
+:-moz-placeholder {
+    color: #a7aabc;
+    font-weight: 50;
+}
+
+::-webkit-input-placeholder {
+    color: #a7aabc;
+    font-weight: 50;
+}
+/* end of search bar*/
+
+
+
+
+
+
+
+
+.content {
+    font-size: 10px;
+}
+
+
+
+
+
+
+#missingModWindow {
+    position: absolute;
+    background-color: white;
+    border-radius: 3px;
+    border:1px solid #FF7F50;
+    z-index: 100;
+    display: none;
+}
+
+.input-group {
+    width: 500px;
+}
+
+.table-bordered {
+    table-layout: fixed;
+}
