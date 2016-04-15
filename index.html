@@ -71,7 +71,7 @@
                     
                     <div class="buttonoftable">
                         <input type="button" value="Upload Schedule" id="ScheduleUpload">
-                        <input type="button" value="See Recommendation" id="RecommendationUpload">
+                        <input type="button" value="See Recommendation" id="RecommendationUpload"><a href="Recommandation%20Schedule.html"></a>
                     </div>
                                             
                     <div class = "examinfo">
@@ -568,10 +568,14 @@
                             findMType(userModules);
                             
                             var ModuleName = document.createElement("p");
+                            var ModuleNumber = document.createElement("p");
+                            var ModuleDate = document.createElement("p");
                             ModuleName = id;
+                            ModuleNumber = mod.name;
+                            ModuleDate = mod.exam;
                             $('#ModuleNumber1').empty().append(ModuleName);
-                            alert("");
-                            
+                            $('#ModuleName1').empty().append(ModuleNumber);
+                            $('#ExamDate1').empty().append(ModuleDate);
                             return false;
                         }
                     }
