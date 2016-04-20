@@ -508,8 +508,8 @@
                             
                             
                             $('.results').on('mouseenter','button',function(e){
-                                var index = $(this).closest("button").index();
-                                var mod = results[index];
+                                var id = $(this).first().children().first().text();
+                                var mod = findModule(id);
                                 
                                 var missing = findMissingModule(mod);
                                 if(missing.length>0){
