@@ -33,7 +33,7 @@
     /*border:1px solid #000;*/ 
     /*width:950px;*/
     width:100%;
-    height:520px;
+    height:560px;
     margin:5px 0 5px 0;
     background-color: #F5F5F5;
 }
@@ -79,7 +79,7 @@ p1 {
 .infowindow {
     background-color: white;
     border: 2px solid #FF7F50;
-    height: 220px;
+    height: 260px;
     width: 350px;
     overflow: scroll;
     overflow-x: hidden;
@@ -433,12 +433,13 @@ div.results::-webkit-scrollbar{
 
 
 .examinforow {
-    height: 25px;
+    height: 35px;
 }
 
 .examinfotitle {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
+    height: 10px;
 }
 
 #progBar_ULR {
@@ -559,16 +560,89 @@ div.results::-webkit-scrollbar{
 }
 
 #ModuleNumber1 {
-    font-size: 8px;
+    font-size: 6px;
     height: 10px;
 }
 
 #ModuleName1 {
-        font-size: 8px;
+    font-size: 6px;
     height: 10px;
 }
 
 #ExamDate1 {
-        font-size: 8px;
+    font-size: 6px;
     height: 10px;
+}
+
+#ModuleNumber2 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ModuleName2 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ExamDate2 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ModuleNumber3 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ModuleName3 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ExamDate3 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ModuleNumber4 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ModuleName4 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ExamDate4 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ModuleNumber5 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ModuleName5 {
+    font-size: 6px;
+    height: 10px;
+}
+
+#ExamDate5 {
+    font-size: 6px;
+    height: 10px;
+}
+.tabletitle {
+    height: 15px;
+}
+
+.examinfo {
+    height: 15px;
+}
+
+.examschedule {
+    display: inline;
+    padding-right: 300px;
+    padding-bottom: 50px;
 }

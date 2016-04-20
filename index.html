@@ -70,6 +70,7 @@
                     </div>
                     
                     <div class="buttonoftable">
+                        <h3 class="examschedule">Exam Schedule</h3>
                         <input type="button" value="Upload Schedule" id="ScheduleUpload">
                         <input type="button" value="See Recommendation" id="RecommendationUpload"><a href="Recommandation%20Schedule.html"></a>
                     </div>
@@ -573,9 +574,50 @@
                             ModuleName = id;
                             ModuleNumber = mod.name;
                             ModuleDate = mod.exam;
-                            $('#ModuleNumber1').empty().append(ModuleName);
-                            $('#ModuleName1').empty().append(ModuleNumber);
-                            $('#ExamDate1').empty().append(ModuleDate);
+                            
+                            var checkEmpty = document.getElementById('ModuleNumber1');
+                            var checkClash = checkEmpty.childNodes.length;
+                            if(checkClash>=1){
+                                var checkEmpty = document.getElementById('ModuleNumber2');
+                                var checkClash = checkEmpty.childNodes.length;
+                                if(checkClash>=1){
+                                    var checkEmpty = document.getElementById('ModuleNumber3');
+                                    var checkClash = checkEmpty.childNodes.length;
+                                    if(checkClash>=1){
+                                        var checkEmpty = document.getElementById('ModuleNumber4');
+                                        var checkClash = checkEmpty.childNodes.length;
+                                        if(checkClash>=1){
+                                            $('#ModuleNumber5').empty().append(ModuleName);
+                                            $('#ModuleName5').empty().append(ModuleNumber);
+                                            $('#ExamDate5').empty().append(ModuleDate);
+                                            return false;
+                                        }
+                                        else{
+                                            $('#ModuleNumber4').empty().append(ModuleName);
+                                            $('#ModuleName4').empty().append(ModuleNumber);
+                                            $('#ExamDate4').empty().append(ModuleDate);
+                                            return false;
+                                        }
+                                    }
+                                    else{
+                                        $('#ModuleNumber3').empty().append(ModuleName);
+                                        $('#ModuleName3').empty().append(ModuleNumber);
+                                        $('#ExamDate3').empty().append(ModuleDate);
+                                        return false;
+                                    }
+                                }
+                                else{
+                                    $('#ModuleNumber2').empty().append(ModuleName);
+                                    $('#ModuleName2').empty().append(ModuleNumber);
+                                    $('#ExamDate2').empty().append(ModuleDate);
+                                    return false;
+                                }
+                            }
+                            else{
+                                $('#ModuleNumber1').empty().append(ModuleName);
+                                $('#ModuleName1').empty().append(ModuleNumber);
+                                $('#ExamDate1').empty().append(ModuleDate);
+                            } 
                             return false;
                         }
                     }
@@ -614,26 +656,26 @@
                     button.appendChild(stateDiv);
                     if(mod.type=="P"){
                         if(state == "PASS"){
-                            button.style.backgroundColor= "#01DF01";
+                            button.style.backgroundColor= "#81F79F";
                         }
                         else{
-                            button.style.backgroundColor= "#B4FFA3";
+                            button.style.backgroundColor= "#A9F5A9";
                         }
                     }
                     else if(mod.type=="U"){
                         if(state == "PASS"){
-                            button.style.backgroundColor= "#2E9AFE";
+                            button.style.backgroundColor= "#81BEF7";
                         }
                         else{
-                            button.style.backgroundColor= "#81F7F3";
+                            button.style.backgroundColor= "#A9D0F5";
                         }
                     }
                     else if(mod.type=="L"){
                         if(state == "PASS"){
-                            button.style.backgroundColor= "#FFBF00";
+                            button.style.backgroundColor= "#F3F781";
                         }
                         else{
-                            button.style.backgroundColor= "#F3F781";
+                            button.style.backgroundColor= "#F2F5A9";
                         }
                     }
                     if(state=="LOCK"){
