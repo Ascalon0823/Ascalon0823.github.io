@@ -1,0 +1,189 @@
+{
+    "name":"semesters","course":"Computer Science","specialization":"AR Video Gaming","children": [{
+        "name": "modules","semester":"1",
+        "children": [{
+            "name": "CS1010",
+            "title": "Programming Methodology",
+            "description": "Refer to link at http://ww1.math.nus.edu.sg/undergrad.aspx?file=stu-modules",
+            "lectureDay": "0",
+            "lectureStart": "8",
+            "lectureDuration": "2"
+        },{
+            "name": "CS1020",
+            "title": "Data Structures and Algorithms I",
+            "description": "Refer to link at http://ww1.math.nus.edu.sg/undergrad.aspx?file=stu-modules",
+            "lectureDay": "0",
+            "lectureStart": "10",
+            "lectureDuration": "2"
+        },{
+            "name": "CS1231",
+            "title": "Discrete Structures",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "1",
+            "lectureStart": "10",
+            "lectureDuration": "2"
+        },{
+            "name": "CS2010",
+            "title": "Data Structures and Algorithms II",
+            "description": "This module is the third part of a three-part series on introductory programming and problem solving by computing. It continues the introduction in CS1010 and CS1020, and emphasizes object-oriented programming with application to complex data structures.",
+            "lectureDay": "2",
+            "lectureStart": "10",
+            "lectureDuration": "2"
+        },{
+            "name": "CS2100",
+            "title": "Computer Organisation",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "0",
+            "lectureStart": "16",
+            "lectureDuration": "2"
+        }]
+    },{
+         "name": "modules","semester":"2",
+        "children": [{
+            "name": "CS2101",
+            "title": "Effective Communication for Computing Professionals",
+            "description": "Refer to link at http://ww1.math.nus.edu.sg/undergrad.aspx?file=stu-modules.",
+            "lectureDay": "2",
+            "lectureStart": "12",
+            "lectureDuration": "2"
+        },{
+            "name": "CS2102",
+            "title": "Database system",
+            "description": "Refer to link at http://ww1.math.nus.edu.sg/undergrad.aspx?file=stu-modules",
+            "lectureDay": "3",
+            "lectureStart": "10",
+            "lectureDuration": "2"
+        }, {
+            "name": "CS2103T",
+            "title": "Software Engineering",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "4",
+            "lectureStart": "10",
+            "lectureDuration": "2"
+        },{
+            "name": "CS2105",
+            "title": "Introduction to computer networks",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "2",
+            "lectureStart": "18",
+            "lectureDuration": "2"
+        },{
+            "name": "CS3240",
+            "title": "Interaction Design",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "2",
+            "lectureStart": "14",
+            "lectureDuration": "2"
+        }]
+    },{
+         "name": "modules","semester":"3",
+        "children": [{
+            "name": "IS1103",
+            "title": "Intro to Signals & Communications",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "4",
+            "lectureStart": "16",
+            "lectureDuration": "2"
+        },{
+            "name": "MA1101R",
+            "title": "Signals & Systems",
+            "description": "Refer to link at http://ww1.math.nus.edu.sg/undergrad.aspx?file=stu-modules",
+            "lectureDay": "2",
+            "lectureStart": "12",
+            "lectureDuration": "2"
+        }, {
+            "name": "CS3242",
+            "title": "Programming for Computer Interfaces",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "1",
+            "lectureStart": "11",
+            "lectureDuration": "2"
+        },{
+            "name": "MA1521",
+            "title": "Engineering Electromagnetics",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "2",
+            "lectureStart": "8",
+            "lectureDuration": "2"
+        },{
+            "name": "MA1301",
+            "title": "Communicating Engineering",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "3",
+            "lectureStart": "16",
+            "lectureDuration": "2"
+        }]
+    },{
+         "name": "modules","semester":"4",
+        "children": [{
+            "name": "SS",
+            "title": "Signals & Systems",
+            "description": "Refer to link at http://ww1.math.nus.edu.sg/undergrad.aspx?file=stu-modules",
+            "lectureDay": "2",
+            "lectureStart": "12",
+            "lectureDuration": "2"
+        }, {
+            "name": "ST2334",
+            "title": "Programming for Computer Interfaces",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "1",
+            "lectureStart": "11",
+            "lectureDuration": "2"
+        },{
+            "name": "PC1221",
+            "title": "Engineering Electromagnetics",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "2",
+            "lectureStart": "8",
+            "lectureDuration": "2"
+        },{
+            "name": "LAJ1201",
+            "title": "Communicating Engineering",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "3",
+            "lectureStart": "16",
+            "lectureDuration": "2"
+        }]
+    },{
+         "name": "modules","semester":"5",
+        "children": [{
+            "name": "GEK1505",
+            "title": "Signals & Systems",
+            "description": "Refer to link at http://ww1.math.nus.edu.sg/undergrad.aspx?file=stu-modules",
+            "lectureDay": "2",
+            "lectureStart": "12",
+            "lectureDuration": "2"
+        }, {
+            "name": "SSA2205",
+            "title": "Programming for Computer Interfaces",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "1",
+            "lectureStart": "11",
+            "lectureDuration": "2"
+        },{
+            "name": "GEM2900",
+            "title": "Engineering Electromagnetics",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "2",
+            "lectureStart": "8",
+            "lectureDuration": "2"
+        },{
+            "name": "LAJ2202",
+            "title": "Communicating Engineering",
+            "description": "This 2000 level module is designed to give students an indepth grounding in fundamental aspects of modern physics. The module concentrates on modern optics and quantum mechanics (QM), with a focus on the applications of these two topics in electrical engineering.",
+            "lectureDay": "3",
+            "lectureStart": "16",
+            "lectureDuration": "2"
+        }]
+    },{
+         "name": "modules","semester":"6",
+        "children": [{
+            "name": "LAJ2201",
+            "title": "Signals & Systems",
+            "description": "Refer to link at http://ww1.math.nus.edu.sg/undergrad.aspx?file=stu-modules",
+            "lectureDay": "2",
+            "lectureStart": "12",
+            "lectureDuration": "2"
+        }]
+    }]
+}
