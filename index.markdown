@@ -4,3 +4,6 @@
 
 layout: home
 ---
+[Arkademy](./Arkademy/index.html)\
+[ProjectCP](./CP/index.html)\
+[ArkademyRL](./RL/index.html)
