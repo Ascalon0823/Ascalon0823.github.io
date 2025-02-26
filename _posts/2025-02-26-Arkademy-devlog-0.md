@@ -70,7 +70,7 @@ Currently it is at prototype stage and can be tested from [here](/Arkademy/index
 ## Server
 The server will be developed using Golang GIN + MongoDB and self hosted during development. I might also find some free hosting plans to host the test environment for the public to test.
 
-Currently it is blank and I will be building it from scratch. Originally my plan is to use Firebase since it handles most backend functionalities for me, but some how it only supports mobile platform for production, why...?
+Currently it is blank and I will be building it from scratch. Originally my plan is to use Firebase since it handles most backend functionalities for me, but some how it [only supports mobile platform for production](https://firebase.google.com/docs/unity/setup#desktop-workflow), why...?
 
 
 # Tasks
@@ -87,3 +87,8 @@ At current stage these are the tasks I have completed and need to be done.
 - [ ] User register and authentication
 - [ ] Rift reward generator API
 - [ ] Character building API
+
+Some additional tasks I am considering
+- [ ] Multiplayer using relay and Mirror I guess?
+- [ ] Admin portal using Vue
+- [ ] User portal using Vue
