@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Hu Yifei"
   avatar           : /assets/images/masthead.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "We turn food into solution."
+  bio              : ""
   location         : "Singapore"
   email            : "ascalon0823@gmail.com"
   links:
