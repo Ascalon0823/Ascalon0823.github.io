@@ -50,12 +50,12 @@ Currently the model design is fairly simple since most of the game play logics a
 
 - **PlayerRecord** is just a struct holds a list of CharacterRecords.
 
-- **CharacterRecord** is the struct holds a single character`s data stored unstructured in database as a plain JSON since the structure might change very frequently, I dont want to update server code every time I update the game logic.
+- **CharacterRecord** is the struct holds a single character`s data stored unstructured in database as a plain JSON since the structure might change very frequently, I don't want to update server code every time I update the game logic.
 
 ## Api
 For register and login api it is quite straight forward, just two POST requests without additional checks. ~~I should though~~ 
 
-For user related APIs, paramter is not used to indicate which user is the target for api. Instead I just simply checking the token and find the user indicate in the token and treat it as the target. The reason is for now any user related operation only require their own contens, although this needs to be changed in the future when the user can check other user`s info or when I need an admin system.
+For user related APIs, parameter is not used to indicate which user is the target for api. Instead I just simply checking the token and find the user indicate in the token and treat it as the target. The reason is for now any user related operation only require their own contents, although this needs to be changed in the future when the user can check other user`s info or when I need an admin system.
 
 A simple token auth middleware is employed for the user related APIs.
 
@@ -199,4 +199,4 @@ Apparently I cant use `System.Net` in Webgl, I have to find some other way to do
 - [ ] Character building API
 
 
-Next I should be spending a lot of time to implement the character building and rewards system since they depends alot on game play contents like abilities and equipments.
+Next I should be spending a lot of time to implement the character building and rewards system since they depends a lot on game play contents like abilities and equipments.
