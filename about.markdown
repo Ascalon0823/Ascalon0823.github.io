@@ -22,40 +22,37 @@ sidebar:
 ---
 
 ---
-Results-driven **Lead Software Engineer** with a strong background in **bespoke and product development**, specializing in **performance optimization, R&D, and scalable software architecture**. Proven ability to **implement new features in foreign technology domains**, independently overcoming technical challenges and delivering **production-ready solutions**. Passionate about **experimenting with new techniques** to enhance **product performance** and seamlessly integrating innovations into real-world applications. Experienced in **mobile and resource-constrained environments**, ensuring efficient, high-performance solutions. Adept at **leading agile teams**, mentoring engineers, and collaborating with cross-functional stakeholders to drive **business and technical success**.
-
+As **a tech lead with 8 years of experience**, I lead **end-to-end** product development, from brainstorming and **prototyping** to development, **on-site** user testing, deployment via **CI/CD**, and ongoing maintenance. I'm a hands-on engineer who quickly adapts to new tech, resolves issues efficiently, and aligns development with the **product roadmap**. I communicate effectively with **C-suite**, **global clients** (Japan, China, UAE), and **cross-functional teams** to keep projects on track, while **mentoring** developers and interns to grow and perform at their best.
 
 ## Work Experience
+**Vice President of Product Development**\
+*VRcollab Pte Ltd | 2021 - Present*
+
+- Led a project that utilised **3D spatial algorithms** for **automatic compliance checking**, refined criteria with government agencies and universities, and **reduced reliance** on timber mock-ups.
+- Integrated platforms such as **ACC** and **BimTrack** through **REST API**, which **doubled** international client acquisitions, and increased software licences by **50%**.
+- Expanded mobile solutions with **AR** functionalities, boosting client acquisition by **25%** and increasing the number of licences per existing client by over two.
+- Reduced alignment discrepancies from more than **30 cm** to **under 5 cm** using advanced plane alignment algorithms, enhancing **on-site precision**.
+- Extended **AR** functionality to outdoor use cases with **GIS** alignment, securing **20%** more clients.
+- Enhanced mobile app stability by implementing a streaming solution to achieve **zero allocation** during loading, utilising acceleration structures such as **octrees** to enable **10x** more geometries, and improve scalability.
+
+
 **Lead Software Engineer**\
-*VRcollab Pte Ltd*
+*VRcollab Pte Ltd | 2017 - 2021*
 
-*2017 - Present* 
-{: .text-right}
-
-- Led the development of **both bespoke and product-based solutions**, ensuring scalability, maintainability, and high performance.
-
-- **Conducted active R&D**, experimenting with new technologies and optimization techniques to enhance **product performance, scalability, and efficiency**.
-
-- **Carefully integrated R&D results** into the product, balancing innovation with stability and ensuring seamless adoption.
-
-- **Implemented new features in foreign technology domains**, independently overcoming technical challenges to deliver **production-ready solutions**.
-
-- Architected **high-performance, resource-efficient applications** for mobile and embedded devices, optimizing **CPU, memory, and battery consumption**.
-
-- Designed **cost-effective implementation plans** for bespoke projects, minimizing development effort while maximizing client requirements.
-
-- Spearheaded the adoption of **CI/CD pipelines and DevOps best practices**, improving deployment speed and reducing system downtime.
-
-- Led an **agile development team**, ensuring timely feature delivery, mentoring engineers, and fostering a culture of continuous improvement.
+- Spearheaded a **multi-user system**, **doubling** software licence per client, and boosting revenue.
+- Advanced the system into an **internet-based platform**, **doubling** client acquisition, and generating leads as clients’ users became customers.
+- Developed third-party plugins for industry formats like **Navisworks** and **IFC**, securing clients in the EU region.
+- Delivered bespoke projects, integrating systems with **CAVE** setups, achieving **10x** revenue compared to standard licensing.
+- Implemented **native multi-display stereoscopic CAVE**, eliminating middleware dependency, cutting costs by **80%**, and deploying the solution in over **10** projects.
+- Executed AR technology projects for **prefab checking and progress monitoring**, reducing client time costs by **50%**, and advancing future innovations.
 
 ## Skills
 
-| Tool | Level | Usage |
-| ---- | ---------- | ----- |
-| C# | Proficient | Application development |
-| Unity3D | Proficient | Application development |
-| Go | Experienced | Server development |
-| Gitlab CI & Github Action | Experienced | CI/CD development and maintenance |
-| Vue | Intermediate | Frontend maintenance and debug |
-| C++ | Intermediate | Plugin development |
+- C#
+- Go
+- Git
+- CI/CD
+- TypeScript
+- Docker
+- Mobile
 
