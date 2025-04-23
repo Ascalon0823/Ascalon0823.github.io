@@ -19,7 +19,7 @@ toc_lable: "Contents"
 There are multiple problems due to browsers` security practices to stop me from hosting my webgl front end on github pages. I will explain one by one chronologically.
 
 
-### 1. Github size limitation
+## Github size limitation
 
 This one is simple. Unity builds a wasm object and need to be pushed to github repo. This single file can easily exceed 50MB limitation of github repo. 
 
@@ -29,7 +29,7 @@ For now the only solution is to compress the contents in build setting. In the `
 
 Eventually as the assets grows, it will inevitably exceeds the limit even with compression. By then I will need to find a new way to host the contents.
 
-### 2. CORS limitation
+## CORS limitation
 
 The first error I encountered after I connected the game to backend is this error, which does not happen in editor and local testing since they are on the same domain as my local server.
 
@@ -62,7 +62,7 @@ Also, since I use `PATCH` method, I need to handle preflight request.
 
 Notice that requests are accepted from any origins which is not a good idea, should changes this when I have a proper hosting.
 
-### 3. HTTPS to HTTP
+## HTTPS to HTTP
 
 After handling the CORS, preflight and CORS related errors are gone. However I was still not able to make request to my server as I encountered Mixed Content error. This is caused by my hosting setup again, as my webgl is running on `github.com` domain which is **HTTPS** and my server running on local host which is **HTTP**.
 
@@ -73,6 +73,7 @@ This is where I decided to change my hosting strategy for now since I want to wo
 Both version should behave the same in game play, the only difference is the online mode will save the data in database and offline mode will save in the browser.
 
 In the future, I will host both the webgl and server on some platform, since the server is already running in docker, it should be easier to transit to cloud.
+
 
 # HTTP client in unity webgl
 
@@ -137,7 +138,7 @@ By doing so, I can use one build to handle both mode. Also in editor I use a sim
 
 # Game play
 
-### 1. The Character Building
+## The Character Building
 
 The character building is currently consist of two part.
 
@@ -171,7 +172,7 @@ Mathf.FloorToInt((float)(Math.Sqrt(initialCost * initialCost + 8 * investedXP * 
 
 Currently it is only implemented with a simple UI. Since the equipment system is still not finished yet, the actual functionality of shop needs to wait.
 
-### 2. Ability
+## Ability
 
 One of the most difficult part for me is implementing a scalable yet clean ability system.
 
